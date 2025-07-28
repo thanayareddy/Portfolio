@@ -1,404 +1,521 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Thanaya-Portfolio</title>
-    <link rel="stylesheet" href="index.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-</head>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
+  <body>
     <!-- Landing Page -->
     <section id="home" class="page active">
-        <div class="container">
-            <nav class="navbar">
-                <div class="profile-pic">
-                    <img src="https://res.cloudinary.com/dalaoz41h/image/upload/v1753631573/95de1fa2-7036-4d41-8396-6d6f2df0ce57_btmslv.jpg" alt="Thanaya Reddy">
-                </div>
-                <ul class="nav-links">
-                    <li><a href="#" onclick="showPage('home')">Home</a></li>
-                    <li><a href="#" onclick="showPage('about')">About</a></li>
-                    <li><a href="#" onclick="showPage('projects')">Projects</a></li>
-                    <li><a href="#" onclick="showPage('skills')">Skills</a></li>
-                </ul>
-                <button class="contact-btn" onclick="showPage('contact')">Contact</button>
-            </nav>
+      <div class="container">
+        <nav class="navbar">
+          <div class="profile-pic">
+            <img src="assets/Profile_pic_short.jpg" alt="Thanaya Reddy" />
+          </div>
+          <ul class="nav-links">
+            <li><a href="#" onclick="showPage('home')">Home</a></li>
+            <li><a href="#" onclick="showPage('about')">About</a></li>
+            <li><a href="#" onclick="showPage('projects')">Projects</a></li>
+            <li><a href="#" onclick="showPage('skills')">Skills</a></li>
+          </ul>
+          <button class="contact-btn" onclick="showPage('contact')">
+            Contact
+          </button>
+        </nav>
 
-            <div class="hero-content">
-                <div class="hero-left">
-                    <h2 class="name">THANAYA REDDY</h2>
-                    <h1 class="title-left">DEVELOPER</h1>
-                    <div class="theme-toggle" onclick="toggleTheme()">
-                        <i class="fas fa-hand-paper"></i>
-                    </div>
-                </div>
-
-                <div class="hero-center">
-                    <div class="profile-image">
-                        <img src="https://res.cloudinary.com/dalaoz41h/image/upload/v1753631573/95de1fa2-7036-4d41-8396-6d6f2df0ce57_btmslv.jpg" alt="Thanaya Reddy">
-                    </div>
-                </div>
+        <div class="hero-content">
+          <div class="hero-left">
+            <h2 class="name">THANAYA REDDY</h2>
+            <h1 class="title-left">DEVELOPER</h1>
+            <div class="theme-toggle" onclick="toggleTheme()">
+              <i class="fas fa-hand-paper"></i>
             </div>
+          </div>
+
+          <div class="hero-center">
+            <div class="profile-image">
+              <img src="assets/Profile_pic_full.jpg" alt="Thanaya Reddy" />
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- About Page -->
     <section id="about" class="page">
-        <div class="container">
-            <nav class="navbar">
-                <div class="profile-pic">
-                    <img src="https://res.cloudinary.com/dalaoz41h/image/upload/v1753631573/95de1fa2-7036-4d41-8396-6d6f2df0ce57_btmslv.jpg" alt="Thanaya Reddy">
-                </div>
-                <ul class="nav-links">
-                    <li><a href="#" onclick="showPage('home')">Home</a></li>
-                    <li><a href="#" onclick="showPage('about')" class="active">About</a></li>
-                    <li><a href="#" onclick="showPage('projects')">Projects</a></li>
-                    <li><a href="#" onclick="showPage('skills')">Skills</a></li>
-                </ul>
-                <button class="contact-btn" onclick="showPage('contact')">Contact</button>
-            </nav>
+      <div class="container">
+        <nav class="navbar">
+          <div class="profile-pic">
+            <img src="assets/Profile_pic_short.jpg" alt="Thanaya Reddy" />
+          </div>
+          <ul class="nav-links">
+            <li><a href="#" onclick="showPage('home')">Home</a></li>
+            <li>
+              <a href="#" onclick="showPage('about')" class="active">About</a>
+            </li>
+            <li><a href="#" onclick="showPage('projects')">Projects</a></li>
+            <li><a href="#" onclick="showPage('skills')">Skills</a></li>
+          </ul>
+          <button class="contact-btn" onclick="showPage('contact')">
+            Contact
+          </button>
+        </nav>
 
-            <div class="about-content">
-                <div class="about-text">
-                    <h1>ABOUT ME</h1>
-                    <p>Hi, I'm Thanaya — a curious and dedicated second-year Computer Science student exploring the world of web development and programming. I'm passionate about building clean, user-friendly websites and constantly learning new technologies.</p>
+        <div class="about-content">
+          <div class="about-text">
+            <h1>ABOUT ME</h1>
+            <p>
+              Hi, I'm Thanaya — a curious and dedicated second-year Computer
+              Science student exploring the world of web development and
+              programming. I'm passionate about building clean, user-friendly
+              websites and constantly learning new technologies.
+            </p>
 
-                    <div class="stats">
-                        <div class="stat">
-                            <h3>1+</h3>
-                            <p>Year of Learning</p>
-                        </div>
-                        <div class="stat">
-                            <h3>5+</h3>
-                            <p>Personal Projects</p>
-                        </div>
-                        <div class="stat">
-                            <h3>10+</h3>
-                            <p>Mini Projects & Code Experiments</p>
-                        </div>
-                    </div>
-
-                    <div class="contact-info">
-                        <div class="contact-item">
-                            <strong>Call Today:</strong><br>
-                            <span>+91 9876543210</span>
-                        </div>
-                        <div class="contact-item">
-                            <strong>Email:</strong><br>
-                            <span>thanaya@example.com</span>
-                        </div>
-                    </div>
-
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-github"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="https://www.linkedin.com/in/siddartha-kadari" target="_blank" rel="noopener noreferrer">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                        <a href="https://www.youtube.com/watch?v=HUzKfgSpYSk" target="_blank" rel="noopener noreferrer">
-                            <i class="fab fa-youtube"></i>
-                        </a>
-                    </div>
-
-                    <button class="story-btn">MY STORY</button>
-                </div>
-
-                <div class="about-image">
-                    <img src="https://res.cloudinary.com/dalaoz41h/image/upload/v1753631573/95de1fa2-7036-4d41-8396-6d6f2df0ce57_btmslv.jpg" alt="Thanaya Reddy">
-                </div>
+            <div class="stats">
+              <div class="stat">
+                <h3>1+</h3>
+                <p>Year of Learning</p>
+              </div>
+              <div class="stat">
+                <h3>5+</h3>
+                <p>Personal Projects</p>
+              </div>
+              <div class="stat">
+                <h3>10+</h3>
+                <p>Mini Projects & Code Experiments</p>
+              </div>
             </div>
+
+            <div class="contact-info">
+              <div class="contact-item">
+                <strong>Call Today:</strong><br />
+                <span>+91 9876543210</span>
+              </div>
+              <div class="contact-item">
+                <strong>Email:</strong><br />
+                <span>thanaya@example.com</span>
+              </div>
+            </div>
+
+            <div class="social-links">
+              <a
+                href="https://github.com/thanayareddy"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i class="fab fa-github"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/thanaya-reddy"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a
+                href="https://www.youtube.com/@thanayareddypodduturi"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fab fa-youtube"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="about-image">
+            <img src="assets/Profile_pic_full.jpg" alt="Thanaya Reddy" />
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Projects Page -->
     <section id="projects" class="page">
-        <div class="container">
-            <nav class="navbar">
-                <div class="profile-pic">
-                    <img src="https://res.cloudinary.com/dalaoz41h/image/upload/v1753631573/95de1fa2-7036-4d41-8396-6d6f2df0ce57_btmslv.jpg" alt="Thanaya Reddy">
+      <div class="container">
+        <nav class="navbar">
+          <div class="profile-pic">
+            <img src="assets/Profile_pic_short.jpg" alt="Thanaya Reddy" />
+          </div>
+          <ul class="nav-links">
+            <li><a href="#" onclick="showPage('home')">Home</a></li>
+            <li><a href="#" onclick="showPage('about')">About</a></li>
+            <li>
+              <a href="#" onclick="showPage('projects')" class="active"
+                >Projects</a
+              >
+            </li>
+            <li><a href="#" onclick="showPage('skills')">Skills</a></li>
+          </ul>
+          <button class="contact-btn" onclick="showPage('contact')">
+            Contact
+          </button>
+        </nav>
+
+        <div class="projects-content">
+          <h1>MY PROJECTS</h1>
+          <p class="projects-subtitle">
+            Here are some of the projects I've been working on. Each project
+            represents a unique challenge and learning experience in my
+            development journey.
+          </p>
+
+          <div class="projects-grid">
+            <div class="project-card">
+              <div class="project-image">
+                <i class="fas fa-globe"></i>
+              </div>
+              <div class="project-content">
+                <h3>E-Commerce Website</h3>
+                <p>
+                  A full-stack e-commerce platform with modern UI/UX design,
+                  payment integration, and admin dashboard for managing products
+                  and orders.
+                </p>
+                <div class="project-tech">
+                  <span class="tech-tag">HTML</span>
+                  <span class="tech-tag">CSS</span>
+                  <span class="tech-tag">Responsive Design</span>
                 </div>
-                <ul class="nav-links">
-                    <li><a href="#" onclick="showPage('home')">Home</a></li>
-                    <li><a href="#" onclick="showPage('about')">About</a></li>
-                    <li><a href="#" onclick="showPage('projects')" class="active">Projects</a></li>
-                    <li><a href="#" onclick="showPage('skills')">Skills</a></li>
-                </ul>
-                <button class="contact-btn" onclick="showPage('contact')">Contact</button>
-            </nav>
-
-            <div class="projects-content">
-                <h1>MY PROJECTS</h1>
-                <p class="projects-subtitle">Here are some of the projects I've been working on. Each project represents a unique challenge and learning experience in my development journey.</p>
-
-                <div class="projects-grid">
-                    <div class="project-card">
-                        <div class="project-image">
-                            <i class="fas fa-globe"></i>
-                        </div>
-                        <div class="project-content">
-                            <h3>E-Commerce Website</h3>
-                            <p>A full-stack e-commerce platform with modern UI/UX design, payment integration, and admin dashboard for managing products and orders.</p>
-                            <div class="project-tech">
-                                <span class="tech-tag">HTML</span>
-                                <span class="tech-tag">CSS</span>
-                                <span class="tech-tag">Responsive Design</span>
-                            </div>
-                            <div class="project-status">
-                                <i class="fas fa-clock"></i>
-                                <span>In Development</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="project-card">
-                        <div class="project-image">
-                            <i class="fas fa-mobile-alt"></i>
-                        </div>
-                        <div class="project-content">
-                            <h3>Task Management App</h3>
-                            <p>A responsive task management application with drag-and-drop functionality, team collaboration features, and real-time updates.</p>
-                            <div class="project-tech">
-                                <span class="tech-tag">JavaScript</span>
-                                <span class="tech-tag">LocalStorage</span>
-                                <span class="tech-tag">HTML</span>
-                                <span class="tech-tag">CSS</span>
-                            </div>
-                            <div class="project-status">
-                                <i class="fas fa-clock"></i>
-                                <span>Coming Soon</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="project-card">
-                        <div class="project-image">
-                            <i class="fas fa-chart-line"></i>
-                        </div>
-                        <div class="project-content">
-                            <h3>Simple Weather App</h3>
-                            <p>A small web app that fetches current weather data using an API and displays it with basic styling.</p>
-                            <div class="project-tech">
-                                <span class="tech-tag">JavaScript</span>
-                                <span class="tech-tag">API</span>
-                                <span class="tech-tag">HTML</span>
-                                <span class="tech-tag">CSS</span>
-                            </div>
-                            <div class="project-status">
-                                <i class="fas fa-clock"></i>
-                                <span>Planning Phase</span>
-                            </div>
-                        </div>
-                    </div>
+                <div class="project-status">
+                  <i class="fas fa-clock"></i>
+                  <span>In Development</span>
                 </div>
+              </div>
             </div>
+
+            <div class="project-card">
+              <div class="project-image">
+                <i class="fas fa-mobile-alt"></i>
+              </div>
+              <div class="project-content">
+                <h3>Task Management App</h3>
+                <p>
+                  A responsive task management application with drag-and-drop
+                  functionality, team collaboration features, and real-time
+                  updates.
+                </p>
+                <div class="project-tech">
+                  <span class="tech-tag">JavaScript</span>
+                  <span class="tech-tag">LocalStorage</span>
+                  <span class="tech-tag">HTML</span>
+                  <span class="tech-tag">CSS</span>
+                </div>
+                <div class="project-status">
+                  <i class="fas fa-clock"></i>
+                  <span>Coming Soon</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card">
+              <div class="project-image">
+                <i class="fas fa-chart-line"></i>
+              </div>
+              <div class="project-content">
+                <h3>Simple Weather App</h3>
+                <p>
+                  A small web app that fetches current weather data using an API
+                  and displays it with basic styling.
+                </p>
+                <div class="project-tech">
+                  <span class="tech-tag">JavaScript</span>
+                  <span class="tech-tag">API</span>
+                  <span class="tech-tag">HTML</span>
+                  <span class="tech-tag">CSS</span>
+                </div>
+                <div class="project-status">
+                  <i class="fas fa-clock"></i>
+                  <span>Planning Phase</span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Skills Page -->
     <section id="skills" class="page">
-        <div class="container">
-            <nav class="navbar">
-                <div class="profile-pic">
-                    <img src="https://res.cloudinary.com/dalaoz41h/image/upload/v1753631573/95de1fa2-7036-4d41-8396-6d6f2df0ce57_btmslv.jpg" alt="Thanaya Reddy">
+      <div class="container">
+        <nav class="navbar">
+          <div class="profile-pic">
+            <img src="assets/Profile_pic_short.jpg" alt="Thanaya Reddy" />
+          </div>
+          <ul class="nav-links">
+            <li><a href="#" onclick="showPage('home')">Home</a></li>
+            <li><a href="#" onclick="showPage('about')">About</a></li>
+            <li><a href="#" onclick="showPage('projects')">Projects</a></li>
+            <li>
+              <a href="#" onclick="showPage('skills')" class="active">Skills</a>
+            </li>
+          </ul>
+          <button class="contact-btn" onclick="showPage('contact')">
+            Contact
+          </button>
+        </nav>
+
+        <div class="skills-content">
+          <div class="skills-text">
+            <h1>MY TECH STACK</h1>
+            <p>
+              I'm currently learning and working with tools like HTML5, CSS3
+              with Tailwind, and Python. Each one helps me build clean,
+              responsive, and accessible websites, while also helping me grow as
+              a developer. I’m all about building a solid foundation first — and
+              these tools are helping me do just that.
+            </p>
+
+            <div class="tech-stack">
+              <div class="tech-item">
+                <div class="tech-icon framer">
+                  <i class="fab fa-html5"></i>
                 </div>
-                <ul class="nav-links">
-                    <li><a href="#" onclick="showPage('home')">Home</a></li>
-                    <li><a href="#" onclick="showPage('about')">About</a></li>
-                    <li><a href="#" onclick="showPage('projects')">Projects</a></li>
-                    <li><a href="#" onclick="showPage('skills')" class="active">Skills</a></li>
-                </ul>
-                <button class="contact-btn" onclick="showPage('contact')">Contact</button>
-            </nav>
-
-            <div class="skills-content">
-                <div class="skills-text">
-                    <h1>MY TECH STACK</h1>
-                    <p>I work with HTML/CSS, Tailwind CSS, React, and Node.js for fast, interactive web development. Figma for clean interfaces, and modern tools for efficient development. Each tool supports how I think, design, and deliver.</p>
-
-                    <div class="tech-stack">
-                        <div class="tech-item">
-                            <div class="tech-icon framer">
-                                <i class="fab fa-html5"></i>
-                            </div>
-                            <div class="tech-info">
-                                <h3>HTML5</h3>
-                                <p>I use HTML5 to create well-structured, accessible, and semantic web pages as the foundation for every project. I understand how to structure forms, elements, and multimedia content efficiently.</p>
-                            </div>
-                        </div>
-
-                        <div class="tech-item">
-                            <div class="tech-icon figma">
-                                <i class="fab fa-css3-alt"></i>
-                            </div>
-                            <div class="tech-info">
-                                <h3>CSS3 & Tailwind</h3>
-                                <p>Modern styling approaches for creating responsive, beautiful interfaces with utility-first CSS and advanced animations.</p>
-                            </div>
-                        </div>
-
-                        <div class="tech-item">
-                            <div class="tech-icon x">
-                                <i class="fab fa-python"></i>
-                            </div>
-                            <div class="tech-info">
-                                <h3>Python</h3>
-                                <p>I'm learning Python for its simplicity and power in solving problems, automating tasks, and understanding programming logic. It's my go-to for writing clean and readable scripts.</p>
-                            </div>
-                        </div>
-
-                        <div class="tech-item">
-                            <div class="tech-icon figma">
-                                <i class="fab fa-js"></i>
-                            </div>
-                            <div class="tech-info">
-                                <h3>JavaScript</h3>
-                                <p>With JavaScript, I bring interactivity and logic to my web pages. From toggling menus to validating forms, I use JavaScript to enhance the user experience and build dynamic features.</p>
-                            </div>
-                        </div>
-                    </div>
+                <div class="tech-info">
+                  <h3>HTML5</h3>
+                  <p>
+                    I use HTML5 to create well-structured, accessible, and
+                    semantic web pages as the foundation for every project. I
+                    understand how to structure forms, elements, and multimedia
+                    content efficiently.
+                  </p>
                 </div>
+              </div>
 
-                <div class="skills-image">
-                    <img src="https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?w=400&h=500&fit=crop" alt="Tech Setup">
+              <div class="tech-item">
+                <div class="tech-icon figma">
+                  <i class="fab fa-css3-alt"></i>
                 </div>
+                <div class="tech-info">
+                  <h3>CSS3 & Tailwind</h3>
+                  <p>
+                    Modern styling approaches for creating responsive, beautiful
+                    interfaces with utility-first CSS and advanced animations.
+                  </p>
+                </div>
+              </div>
+
+              <div class="tech-item">
+                <div class="tech-icon x">
+                  <i class="fab fa-python"></i>
+                </div>
+                <div class="tech-info">
+                  <h3>Python</h3>
+                  <p>
+                    I'm learning Python for its simplicity and power in solving
+                    problems, automating tasks, and understanding programming
+                    logic. It's my go-to for writing clean and readable scripts.
+                  </p>
+                </div>
+              </div>
+
+              <div class="tech-item">
+                <div class="tech-icon figma">
+                  <i class="fab fa-js"></i>
+                </div>
+                <div class="tech-info">
+                  <h3>JavaScript</h3>
+                  <p>
+                    With JavaScript, I bring interactivity and logic to my web
+                    pages. From toggling menus to validating forms, I use
+                    JavaScript to enhance the user experience and build dynamic
+                    features.
+                  </p>
+                </div>
+              </div>
             </div>
+          </div>
+
+          <div class="skills-image">
+            <img
+              src="https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?w=400&h=500&fit=crop"
+              alt="Tech Setup"
+            />
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Contact Page -->
     <section id="contact" class="page">
-        <div class="container">
-            <nav class="navbar">
-                <div class="profile-pic">
-                    <img src="https://res.cloudinary.com/dalaoz41h/image/upload/v1753631573/95de1fa2-7036-4d41-8396-6d6f2df0ce57_btmslv.jpg" alt="Thanaya Reddy">
-                </div>
-                <ul class="nav-links">
-                    <li><a href="#" onclick="showPage('home')">Home</a></li>
-                    <li><a href="#" onclick="showPage('about')">About</a></li>
-                    <li><a href="#" onclick="showPage('projects')">Projects</a></li>
-                    <li><a href="#" onclick="showPage('skills')">Skills</a></li>
-                </ul>
-                <button class="contact-btn" onclick="showPage('contact')" class="active">Contact</button>
-            </nav>
+      <div class="container">
+        <nav class="navbar">
+          <div class="profile-pic">
+            <img src="assets/Profile_pic_short.jpg" alt="Thanaya Reddy" />
+          </div>
+          <ul class="nav-links">
+            <li><a href="#" onclick="showPage('home')">Home</a></li>
+            <li><a href="#" onclick="showPage('about')">About</a></li>
+            <li><a href="#" onclick="showPage('projects')">Projects</a></li>
+            <li><a href="#" onclick="showPage('skills')">Skills</a></li>
+          </ul>
+          <button
+            class="contact-btn"
+            onclick="showPage('contact')"
+            class="active"
+          >
+            Contact
+          </button>
+        </nav>
 
-            <div class="contact-content">
-                <div class="contact-header">
-                    <h1>Let's talk...</h1>
-                    <p>What would you like to talk about? I'm always excited to discuss new projects, opportunities, and creative collaborations.</p>
-                </div>
+        <div class="contact-content">
+          <div class="contact-header">
+            <h1>Let's talk...</h1>
+            <p>
+              What would you like to talk about? I'm always excited to discuss
+              new projects, opportunities, and creative collaborations.
+            </p>
+          </div>
 
-                <form class="contact-form" onsubmit="handleSubmit(event)">
-                    <div class="form-group">
-                        <label for="topic">Select a Topic</label>
-                        <select id="topic" name="topic" required>
-                            <option value="">Choose a topic...</option>
-                            <option value="project">New Project</option>
-                            <option value="collaboration">Collaboration</option>
-                            <option value="consultation">Consultation</option>
-                            <option value="other">Other</option>
-                        </select>
-                    </div>
-
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="name">Your name</label>
-                            <input type="text" id="name" name="name" required placeholder="Enter your full name">
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email address</label>
-                            <input type="email" id="email" name="email" required placeholder="your@email.com">
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="phone">Contact number (Optional)</label>
-                        <input type="tel" id="phone" name="phone" placeholder="+91 98765 43210">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="message">Project overview or message</label>
-                        <textarea id="message" name="message" required placeholder="Tell me about your project, requirements, timeline, or any questions you have..."></textarea>
-                    </div>
-
-                    <button type="submit" class="submit-btn">Send message</button>
-                </form>
-
-                <div class="contact-info-section">
-                    <div class="contact-info-card">
-                        <i class="fab fa-dribbble"></i>
-                        <h3>Dribbble</h3>
-                        <p>You can find snapshots of my design work on Dribbble. Client work tends to be uploaded after the project has finished for confidentiality purposes.</p>
-                    </div>
-
-                    <div class="contact-info-card">
-                        <i class="fab fa-github"></i>
-                        <h3>GitHub</h3>
-                        <p>Take a look at my GitHub profile to see some of the open source projects I am currently working on. You can find GitHub at @thanaya-dev.</p>
-                    </div>
-
-                    <div class="contact-info-card">
-                        <i class="fab fa-twitter"></i>
-                        <h3>Twitter</h3>
-                        <p>I share my thoughts and opinions on the web and general tech on Twitter, feel free to get in touch with me @thanaya_dev.</p>
-                    </div>
-                </div>
+          <form class="contact-form" onsubmit="handleSubmit(event)">
+            <div class="form-group">
+              <label for="topic">Select a Topic</label>
+              <select id="topic" name="topic" required>
+                <option value="">Choose a topic...</option>
+                <option value="project">New Project</option>
+                <option value="collaboration">Collaboration</option>
+                <option value="consultation">Consultation</option>
+                <option value="other">Other</option>
+              </select>
             </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Your name</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  required
+                  placeholder="Enter your full name"
+                />
+              </div>
+              <div class="form-group">
+                <label for="email">Email address</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  placeholder="your@email.com"
+                />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Contact number (Optional)</label>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="+91 98765 43210"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="message">Project overview or message</label>
+              <textarea
+                id="message"
+                name="message"
+                required
+                placeholder="Tell me about your project, requirements, timeline, or any questions you have..."
+              ></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">Send message</button>
+          </form>
+
+          <div class="contact-info-section">
+            <div class="contact-info-card">
+              <i class="fab fa-dribbble"></i>
+              <h3>Dribbble</h3>
+              <p>
+                You can find snapshots of my design work on Dribbble. Client
+                work tends to be uploaded after the project has finished for
+                confidentiality purposes.
+              </p>
+            </div>
+
+            <div class="contact-info-card">
+              <i class="fab fa-github"></i>
+              <h3>GitHub</h3>
+              <p>
+                Take a look at my GitHub profile to see some of the open source
+                projects I am currently working on. You can find GitHub at
+                @thanaya-dev.
+              </p>
+            </div>
+
+            <div class="contact-info-card">
+              <i class="fab fa-twitter"></i>
+              <h3>Twitter</h3>
+              <p>
+                I share my thoughts and opinions on the web and general tech on
+                Twitter, feel free to get in touch with me @thanaya_dev.
+              </p>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <script>
-        let isDarkTheme = false;
+      let isDarkTheme = false;
 
-        function toggleTheme() {
-            isDarkTheme = !isDarkTheme;
-            document.body.classList.toggle('dark-theme', isDarkTheme);
+      function toggleTheme() {
+        isDarkTheme = !isDarkTheme;
+        document.body.classList.toggle("dark-theme", isDarkTheme);
+      }
+
+      function showPage(pageId) {
+        // Hide all pages
+        const pages = document.querySelectorAll(".page");
+        pages.forEach((page) => page.classList.remove("active"));
+
+        // Show selected page
+        const targetPage = document.getElementById(pageId);
+        if (targetPage) {
+          targetPage.classList.add("active");
         }
 
-        function showPage(pageId) {
-            // Hide all pages
-            const pages = document.querySelectorAll('.page');
-            pages.forEach(page => page.classList.remove('active'));
+        // Update active nav link
+        const navLinks = document.querySelectorAll(".nav-links a");
+        navLinks.forEach((link) => link.classList.remove("active"));
 
-            // Show selected page
-            const targetPage = document.getElementById(pageId);
-            if (targetPage) {
-                targetPage.classList.add('active');
-            }
-
-            // Update active nav link
-            const navLinks = document.querySelectorAll('.nav-links a');
-            navLinks.forEach(link => link.classList.remove('active'));
-
-            // Add active class to current page nav if exists
-            const currentNav = document.querySelector(`a[onclick="showPage('${pageId}')"]`);
-            if (currentNav) {
-                currentNav.classList.add('active');
-            }
+        // Add active class to current page nav if exists
+        const currentNav = document.querySelector(
+          `a[onclick="showPage('${pageId}')"]`
+        );
+        if (currentNav) {
+          currentNav.classList.add("active");
         }
+      }
 
-        function handleSubmit(event) {
-            event.preventDefault();
+      function handleSubmit(event) {
+        event.preventDefault();
 
-            // Get form data
-            const formData = new FormData(event.target);
-            const data = Object.fromEntries(formData);
+        // Get form data
+        const formData = new FormData(event.target);
+        const data = Object.fromEntries(formData);
 
-            // Here you can add your form submission logic
-            // For now, we'll just show an alert
-            alert('Thank you for your message! I will get back to you soon.');
+        // Here you can add your form submission logic
+        // For now, we'll just show an alert
+        alert("Thank you for your message! I will get back to you soon.");
 
-            // Reset form
-            event.target.reset();
-        }
+        // Reset form
+        event.target.reset();
+      }
 
-        // Initialize page on load
-        document.addEventListener('DOMContentLoaded', function() {
-            // Ensure home page is active by default
-            showPage('home');
-        });
+      // Initialize page on load
+      document.addEventListener("DOMContentLoaded", function () {
+        // Ensure home page is active by default
+        showPage("home");
+      });
     </script>
-</body>
-
+  </body>
 </html>
